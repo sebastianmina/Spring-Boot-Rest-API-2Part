@@ -6,13 +6,13 @@ import co.escuelaing.Task.Data.*;
 
 public interface TaskService {
     
-    TaskData create( TaskData task );
+    Task create( Task task );
 
-    TaskData findById( String id );
+    Task findById( String id );
     
-    List<TaskData> getAll();
+    List<Task> getAll();
 
     boolean deleteById( String id );
 
-    TaskData update( TaskData taskDto, String id );
+    Task update( Task taskDto, String id );
 }

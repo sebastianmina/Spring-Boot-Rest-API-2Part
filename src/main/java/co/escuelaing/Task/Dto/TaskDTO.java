@@ -4,11 +4,15 @@ import java.util.Date;
 
 public class TaskDTO {
 
-    private String name;
-    private String description;
-    private String status;
-    private String assignedTo;
-    private Date dueDate;
+    String name , description , status , assignedTo, dueDate;
+
+    public TaskDTO(String name, String description, String status, String assignedTo, String dueDate) {
+        this.name = name;
+        this.description = description;
+        this.status = status;
+        this.assignedTo = assignedTo;
+        this.dueDate = dueDate;
+    }
 
     public String getName(){
         return name;
@@ -42,11 +46,11 @@ public class TaskDTO {
         this.assignedTo = assignedTo;
     }
 
-    public Date getDate(){
+    public String getDate(){
         return dueDate;
     }
 
-    public void setDate(Date dueDate){
+    public void setDate(String dueDate){
         this.dueDate = dueDate;
     }
 

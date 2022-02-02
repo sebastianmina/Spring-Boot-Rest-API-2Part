@@ -1,15 +1,27 @@
 package co.escuelaing.Task.Data;
 
-import java.util.Date;
+//import java.util.Date;
 
-public class TaskData {
+public class Task {
     private String id;
     private String name;
     private String description;
     private String status;
     private String assignedTo;
-    private Date dueDate;
+    private String dueDate;
     private String created;
+
+    public Task(String id, String name, String description, String status, String assignedTo, String dueDate,
+            String created) {
+
+        this.id = id;
+        this.name = name;
+        this.description = description;
+        this.status = status;
+        this.assignedTo = assignedTo;
+        this.dueDate = dueDate;
+        this.created = created;
+    }
 
     public String getId(){
         return id;
@@ -51,11 +63,11 @@ public class TaskData {
         this.assignedTo = assignedTo;
     }
 
-    public Date getDate(){
+    public String getDate(){
         return dueDate;
     }
 
-    public void setDate(Date dueDate){
+    public void setDate(String dueDate){
         this.dueDate = dueDate;
     }
 
